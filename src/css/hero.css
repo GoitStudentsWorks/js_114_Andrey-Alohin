@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   flex-direction: column;
-  background-image: url(/img/background-hero-mob_result.webp);
+  background-image: url(/img/background-hero-mob_result_result.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 @media (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url(/img/background-hero-mob@2x_result.webp);
+    background-image: url(/img/background-hero-mob@2x_result_result.png);
   }
 }
 
@@ -63,7 +63,7 @@
 .hero-link > a:hover {
   /* transform: scale(1.1); */
   border-color: white;
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -75,13 +75,13 @@
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(/img/background-hero-tablet_result.webp);
+    background-image: url(/img/background-hero-tablet_result_result.png);
     padding-top: 300px;
   }
 
   @media (min-resolution: 192dpi) {
     .hero-section {
-      background-image: url(/img/background-hero-tablet@2x_result.webp);
+      background-image: url(/img/background-hero-tablet@2x_result_result.png);
     }
   }
 
@@ -114,7 +114,7 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url(/img/background-hero-desk_result.webp);
+    background-image: url(/img/background-hero-desk_result_result.png);
     padding-top: 300px;
   }
 
@@ -125,7 +125,7 @@
 
   @media (min-resolution: 192dpi) {
     .hero-section {
-      background-image: url(/img/background-hero-desk@2x_result.webp);
+      background-image: url(/img/background-hero-desk@2x_result_result.png);
     }
   }
 }
