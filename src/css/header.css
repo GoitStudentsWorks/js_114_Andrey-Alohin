@@ -24,9 +24,9 @@ button {
 .header-logo {
   /* Стилі для обгортки логотипа */
   display: flex;
-
-  width: 172px;
-  height: 80px;
+  gap: 8px;
+  /* width: 172px;
+  height: 80px; */
 }
 .header-logo-bc {
   /* Стилі для фонового логотипа*/
@@ -34,12 +34,13 @@ button {
   border-radius: 18px;
   width: 80px;
   height: 80px;
-  background-image: url('../img/header-logo.jpg');
+
+  /* background-image: url('../img/header-logo.jpg'); */
 }
 
 .header-logo-jefferson {
   /* Стилі для призвища jefferson логотипа*/
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
 
 .header-nav {
@@ -67,10 +68,10 @@ button {
 }
 
 .header-menu-title {
-  padding: 10px;
-  width: 60px;
+  /* padding: 10px; */
+  /* width: 60px; */
   height: 39px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -89,7 +90,7 @@ button {
 
 .header-order {
   display: none;
-  padding-top: 18px;
+  /* padding-top: 18px; */
 }
 
 @media (min-width: 768px) {
@@ -99,8 +100,11 @@ button {
 }
 
 .header-order a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 60px;
-  padding: 18px 24px;
+  /* padding: 18px 24px; */
   width: 163px;
   height: 55px;
   background-color: #ed3b44;
@@ -125,7 +129,7 @@ button {
   right: 0;
   width: 100%;
   height: 100%;
-  padding: 72px 16px 40px;
+  /* padding: 72px 16px 40px; */
 
   display: flex;
   flex-direction: column;
@@ -135,8 +139,9 @@ button {
   transform: translateX(100%);
   visibility: hidden;
   opacity: 0;
-  transition: 250ms ease-in;
-  transition-property: transform opasity;
+  transition: opacity 0.5s ease-out,
+    visibility 0.5s cubic-bezier(0.19, 0.4, 0.59, 0.89),
+    transform 0.5s ease-in-out;
   z-index: 1000; /* Щоб меню було поверх інших елементів */
 }
 
@@ -154,13 +159,14 @@ button {
 
 .header-dropdown-wrapper a {
   border-bottom: 2px solid;
-  padding-bottom: 5px;
+  /* padding-bottom: 3px; */
 }
 .menu-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   height: 100%;
 }
 
@@ -176,6 +182,8 @@ button {
   position: absolute;
   top: 32px;
   right: 16px;
+  width: 28px;
+  height: 28px;
 }
 
 .header-dropdown {
@@ -188,13 +196,14 @@ button {
 }
 .header-order-burger {
   display: block;
-  margin: 0 auto 32px;
+  margin: 0 auto 64px;
 }
 
 .header-order-burger a {
   border-radius: 60px;
   padding: 18px 24px;
-  width: 163px;
-  height: 55px;
+  /* width: 163px;
+  height: 55px; */
   background-color: #ed3b44;
+  border: none;
 }
