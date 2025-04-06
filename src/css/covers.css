@@ -30,7 +30,7 @@
 }
 .covers-list {
   display: flex;
-  transform: rotate(16deg);
+  transform: rotate(17deg);
 }
 .covers-item {
   flex-shrink: 0;
