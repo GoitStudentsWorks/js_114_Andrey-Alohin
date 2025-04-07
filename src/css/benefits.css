@@ -39,7 +39,6 @@
 .benefits-item {
     border-radius: 20px;
     padding: 24px;
-    width: 344px;
     height: 270px;
     background: #242527;
 
@@ -47,6 +46,7 @@
 }
 
 .benefits-item:hover {
+    width: 344px;
     transform: scale(1.03);
 }
 
@@ -56,8 +56,10 @@
     }
 }
 
-.benefits-item-text {
-    width: 296px;
+@media screen and (min-width: 768px) {
+    .benefits-item-text {
+        width: 296px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
