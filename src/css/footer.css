@@ -20,10 +20,11 @@ section:last-of-type {
 }
 
 .img-footer {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
 }
-.title-footer {
+.title-footer,
+.together {
   color: #fafafa;
   font-size: 40px;
   font-weight: 500;
@@ -33,19 +34,13 @@ section:last-of-type {
 .highlight {
   color: #ed3b44;
 }
-.together {
-  color: #fafafa;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -0.03em;
-}
+
 .div-form {
   margin-top: 63px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
+
 .footer-input,
 .footer-comment {
   color: #fafafa;
@@ -56,11 +51,15 @@ section:last-of-type {
   outline: none;
   resize: none;
   transition: border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 20px;
+  width: 343px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  height: 44px;
 }
 
-.footer-input {
-  padding-bottom: 20px;
-}
 .footer-input:focus,
 .footer-comment:focus {
   border-bottom: 1px solid rgba(250, 250, 250, 0.5);
@@ -113,7 +112,7 @@ section:last-of-type {
 
 .tel-button {
   background-color: transparent;
-  padding: 10px 12px;
+  padding: 7px 12px;
   box-sizing: border-box;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
@@ -128,11 +127,17 @@ section:last-of-type {
   color: #fafafa;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   width: 100vw;
   height: 100vh;
   background-color: rgba(28, 29, 32, 0.8);
@@ -160,29 +165,27 @@ section:last-of-type {
   border: 1px solid rgba(250, 250, 250, 0.1);
   position: relative;
 }
-.madal-btn {
+.modal-btn {
   cursor: pointer;
   position: absolute;
-  top: 24px; ;
+  top: 24px;
   right: 24px;
   border-radius: 50%;
-  background-color: #e7e9fc;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
 }
 .modal-icon {
+  fill: #e7e9fc;
 }
 .modal-title {
   color: rgb(250, 250, 250);
-  font-family: Inter Tight;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: center;
 }
@@ -195,7 +198,109 @@ section:last-of-type {
   letter-spacing: -0.02em;
   text-align: center;
 }
+.success {
+  color: green;
+  border-top: 2px solid green;
+}
+
+.error {
+  color: red;
+  border-top: 2px solid red;
+}
+.input-message {
+  height: 16px;
+}
+/* TABLET */
 @media (min-width: 768px) {
-  .container {
+  section:last-of-type {
+    padding: 85px 32px 169px;
+  }
+  .footer {
+    background-image: url(../img/elements-tablet.jpg);
+  }
+  .fcontainer {
+    padding: 0;
+  }
+  .img-footer {
+    width: 70px;
+    height: 70px;
+  }
+  .title-footer,
+  .together {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .img-t {
+    gap: 7px;
+  }
+  .div-form {
+    margin-top: 64px;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .div-button-form {
+    display: flex;
+    gap: 32px;
+  }
+  .footer-input,
+  .footer-comment {
+    width: 245px;
+  }
+  .send-btn {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .contact-menu {
+    margin-top: 36px;
+    gap: 8px;
+  }
+  .tel-button {
+    padding: 18px 32px 18px 32px;
+    height: 55px;
+  }
+  .mail,
+  .tel {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    height: 19px;
+  }
+  .footer-modal {
+    padding: 63px;
+    width: 492px;
+    min-height: 246px;
+  }
+  .modal-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .modal-icon {
+    width: 12px;
+    height: auto;
+  }
+  .modal-title {
+    text-align: start ;
+  }
+  
+}
+/* DESKTOP */
+@media (min-width: 1440px) {
+  section:last-of-type {
+    padding: 85px 196px 169px;
+  }
+  .footer {
+    background-image: url(../img/elements-desktop.jpg);
+    background-size: 400px;
+  }
+  .footer-input,
+  .footer-comment {
+    width: 390px;
+  }
+  .div-button-form {
+    gap: 86px;
   }
 }
