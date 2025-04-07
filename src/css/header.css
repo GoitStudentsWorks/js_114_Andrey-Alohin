@@ -1,10 +1,9 @@
 .modal-open {
   overflow: hidden;
 }
-button {
+.button-header {
   /* Стилі базові для кнопки */
   all: unset;
-  cursor: pointer;
 }
 .header {
   position: absolute;
@@ -16,7 +15,10 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
+.header-link {
+  display: flex;
+  gap: 8px;
+}
 .header-logo {
   /* Стилі для обгортки логотипа */
   display: flex;
@@ -30,9 +32,10 @@ button {
   height: 80px;
 }
 
-.header-logo-jefferson svg {
+.header-logo-jefferson {
   /* Стилі для призвища jefferson логотипа*/
-  transform: scale(1.8) translate(-10px, 4px);
+  font-size: 19px;
+  line-height: 19px;
 }
 
 .header-nav {
@@ -56,9 +59,14 @@ button {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    position: relative;
   }
 }
-
+.header-nav-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .header-menu-title {
   height: 39px;
   text-decoration: underline;
@@ -68,13 +76,26 @@ button {
   display: none;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .header-nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 150ms ease-in-out;
+    transition-property: opacity;
+  }
+}
 
 .header-nav-menu-list.active {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+
+  opacity: 1;
+  transition: 300ms ease-in-out;
+  transition-property: opacity;
 }
 
 .header-nav-menu-item {
+  height: 19px;
 }
 
 .header-order {
@@ -137,6 +158,11 @@ button {
   transform: translateX(0); /* Кінцеве положення */
   opacity: 1;
   visibility: inherit;
+}
+@media (min-width: 768px) {
+  .header-dropdown-wrapper.active {
+    display: none;
+  }
 }
 
 .header-dropdown-wrapper li {
