@@ -5,11 +5,6 @@
 .modal-open {
   overflow: hidden;
 }
-button {
-  /* Стилі базові для кнопки */
-  all: unset;
-  cursor: pointer;
-}
 .header {
   position: absolute;
   top: 32px;
