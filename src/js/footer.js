@@ -4,8 +4,30 @@ const commentInput = document.querySelector(".footer-comment");
 const sendBtn = document.querySelector(".send-btn");
 const modal = document.querySelector(".backdrop");
 const modalCloseBtn = document.querySelector(".modal-btn");
+const modalTitle = document.querySelector(".modal-title");
+const modalText = document.querySelector(".modal-p");
+const textInput = document.getElementById("textInput");
 
-// validation 
+
+const maxLength = 100;
+
+// Обрезка при вводе
+textInput.addEventListener("input", () => {
+  if (textInput.value.length > maxLength) {
+    textInput.value = textInput.value.slice(0, maxLength) + '...';
+  }
+});
+
+// Обрезка при потере фокуса (если пользователь вставил слишком длинный текст)
+textInput.addEventListener("blur", () => {
+  if (textInput.value.length > maxLength) {
+    textInput.value = textInput.value.slice(0, maxLength) + '...';
+  }
+});
+
+let formSubmittedSuccessfully = false;
+
+// validation
 emailInput.addEventListener("input", () => {
   const email = emailInput.value;
   const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -24,15 +46,7 @@ emailInput.addEventListener("input", () => {
   }
 });
 
-// comment with dots
-commentInput.addEventListener("input", () => {
-  const maxChars = 100;
-  if (commentInput.value.length > maxChars) {
-    commentInput.value = commentInput.value.slice(0, maxChars) + "...";
-  }
-});
-
-// input form
+// submit form
 sendBtn.addEventListener("click", async (e) => {
   e.preventDefault();
 
@@ -54,23 +68,37 @@ sendBtn.addEventListener("click", async (e) => {
     const response = await fetch("/api/request", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, message }),
+      body: JSON.stringify({ email, comment }),
     });
 
-    if (!response.ok) throw new Error("Server error");
+    if (!response.ok) throw new Error(await response.text());
 
-    // show modal window and clear the form
-    modal.classList.add("is-open");
+    formSubmittedSuccessfully = true;
+
+    // cleaning
     emailInput.value = "";
     commentInput.value = "";
     emailMessage.textContent = "";
     emailMessage.classList.remove("success", "error");
   } catch (error) {
-    alert("Something went wrong. Please check your inputs and try again.");
+    formSubmittedSuccessfully = false;
+
+    // error when submit
+    modalTitle.textContent = "Error submitting the form.";
+    modalText.textContent = "Please check your data and try again.";
+  } finally {
+    modal.classList.add("is-open");
   }
 });
 
-// to close modal
+// closemark
 modalCloseBtn.addEventListener("click", () => {
   modal.classList.remove("is-open");
+});
+
+// close with esc
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.remove("is-open");
+  }
 });

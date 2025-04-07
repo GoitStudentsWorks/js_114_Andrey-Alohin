@@ -1,5 +1,5 @@
-<section class="footer" id="footer">
-  <div class="fcontainer">
+<footer class="footer" id="footer">
+  <div class="container">
     <div class="img-t">
       <div class="title-img">
         <img class="img-footer" src="../public/project image.png" />
@@ -8,53 +8,49 @@
       <h2 class="together">TOGETHER</h2>
     </div>
     <div class="div-button-form">
-      <div class="div-form">
-        <div class="div-input">
-           <!-- there some updates for full div-form -->
+      <div class="div-input">
+        <!-- there some updates for full div-form -->
         <input
-        id="emailInput"
-        class="footer-input"
-        type="email"
-        placeholder="clients@gmail.com"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        required
-      />
-      <p id="emailMessage" class="input-message"></p>
-        </div>
-       
-        <input
+          id="emailInput"
+          class="footer-input"
+          type="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <p id="emailMessage" class="input-message"></p>
+      </div>
+      <input
         type="text"
         id="textInput"
         class="footer-comment"
         placeholder="comments"
         maxlength="100"
       />
-      </div>
-
-    <button type="submit" class="send-btn">Send</button>
-  </div>
-    <div class="contact-info">
-      <ul class="contact-menu">
-        <li class="list-item">
-          <button class="tel-button">
-            <a class="mail" href="mailto:lloydjefferson@gmail.com"
-              >lloydjefferson@gmail.com</a
-            >
-          </button>
-        </li>
-        <li class="list-item">
-          <button class="tel-button">
-            <a class="tel" href="tel:+380111111111">+380 11 111 11 11</a>
-          </button>
-        </li>
-      </ul>
+      <button type="submit" class="send-btn">Send</button>
     </div>
-    <div class="backdrop is-open">
+
+    <ul class="contact-menu">
+      <li class="list-item">
+        <button class="tel-button">
+          <a class="mail" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </button>
+      </li>
+      <li class="list-item">
+        <button class="tel-button">
+          <a class="tel" href="tel:+380111111111">+380 11 111 11 11</a>
+        </button>
+      </li>
+    </ul>
+
+    <div class="backdrop">
       <div class="footer-modal">
         <button type="button" class="modal-btn">
           <svg class="modal-icon" width="11" height="11" viewBox="0 0 32 32">
             <use href="../img/sprites.svg#icon-closemark"></use>
-          </svg>          
+          </svg>
         </button>
         <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
         <p class="modal-p">
@@ -64,4 +60,4 @@
       </div>
     </div>
   </div>
-</section>
+</footer>

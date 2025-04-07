@@ -1,12 +1,11 @@
-section:last-of-type {
-  padding: 32px 0px;
-}
+
 .footer {
   background-image: url(../public/backraund1.jpg);
   background-position: right;
   background-repeat: no-repeat;
+  padding: 32px 0px;
 }
-.fcontainer {
+.container {
   padding: 0px 16px;
 }
 .title-img {
@@ -17,6 +16,7 @@ section:last-of-type {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 63px;
 }
 
 .img-footer {
@@ -34,13 +34,11 @@ section:last-of-type {
 .highlight {
   color: #ed3b44;
 }
-
-.div-form {
-  margin-top: 63px;
+.div-button-form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
-
 .footer-input,
 .footer-comment {
   color: #fafafa;
@@ -58,6 +56,12 @@ section:last-of-type {
   line-height: 24px;
   letter-spacing: -0.02em;
   height: 44px;
+}
+.footer-comment{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 32px;
 }
 
 .footer-input:focus,
@@ -91,18 +95,11 @@ section:last-of-type {
   align-items: center;
   transition: background 0.3s ease;
   align-self: flex-start;
-  margin-top: 32px;
-  margin-bottom: 64px;
 }
 
 .send-btn:hover {
   background-color: #e0373f;
 }
-
-.contact-info {
-  display: flex;
-}
-
 .contact-menu {
   list-style: none;
   padding: 0;
@@ -212,14 +209,12 @@ section:last-of-type {
 }
 /* TABLET */
 @media (min-width: 768px) {
-  section:last-of-type {
-    padding: 85px 32px 169px;
+  .container {
+    padding: 0 32px;
   }
   .footer {
     background-image: url(../img/elements-tablet.jpg);
-  }
-  .fcontainer {
-    padding: 0;
+    padding: 85px 0 169px;
   }
   .img-footer {
     width: 70px;
@@ -234,27 +229,31 @@ section:last-of-type {
   }
   .img-t {
     gap: 7px;
-  }
-  .div-form {
-    margin-top: 64px;
-    flex-direction: row;
-    gap: 32px;
+    margin-bottom: 18px;
   }
   .div-button-form {
     display: flex;
+    flex-direction: row;
     gap: 32px;
+    align-items: center;
+    margin-bottom: 18px;
   }
+.div-input {
+  padding-top: 17px;
+}
   .footer-input,
   .footer-comment {
     width: 245px;
+    margin: 0;
   }
+
   .send-btn {
     margin: 0;
     width: 150px;
     height: 150px;
   }
+
   .contact-menu {
-    margin-top: 36px;
     gap: 8px;
   }
   .tel-button {
@@ -285,8 +284,8 @@ section:last-of-type {
   .modal-title {
     text-align: start ;
   }
-  
 }
+
 /* DESKTOP */
 @media (min-width: 1440px) {
   section:last-of-type {
@@ -300,7 +299,13 @@ section:last-of-type {
   .footer-comment {
     width: 390px;
   }
+  .footer-input {
+    margin-right: 32px;
+  }
   .div-button-form {
-    gap: 86px;
+    gap: 0;
+  }
+  .footer-comment{
+    margin-right: 86px;
   }
 }
