@@ -1,3 +1,4 @@
+import './js/footer.js'
 import './js/about';
 import './js/covers';
 import './js/header';
