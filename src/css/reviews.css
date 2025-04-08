@@ -58,6 +58,7 @@
 
 .review-text-container {
   overflow: scroll;
+  scrollbar-width: none;
 }
 
 .review-text {
