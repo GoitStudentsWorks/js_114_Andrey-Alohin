@@ -1,0 +1,194 @@
+.faq-section {
+  margin: auto;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: start;
+}
+.ac {
+  background-color: transparent !important;
+  border: none !important;
+  border-top: 1px solid rgba(250, 250, 250, 0.2) !important;
+  margin-bottom: 0 !important;
+}
+.ac + .is-active .ac-trigger {
+  padding-bottom: 16px !important;
+}
+.ac:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2) !important;
+}
+.ac-trigger {
+  position: relative !important;
+  padding-right: 50px !important;
+}
+#ac-0 .ac-trigger,
+#ac-1 .ac-trigger,
+#ac-2 .ac-trigger,
+#ac-3 .ac-trigger,
+#ac-4 .ac-trigger {
+  padding: 20px 32px 0px 0px !important;
+}
+#ac-5 .ac-item-6.is-active .ac-trigger {
+  padding: 20px 32px 0 0 !important;
+}
+.ac-item-6 .ac-trigger {
+  padding: 20px 32px 20px 0px !important;
+}
+
+.ac-trigger::after {
+  content: '' !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../img/arrow.svg') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+
+  width: 34px !important;
+  height: 34px !important;
+
+  position: absolute;
+  right: 0 !important;
+  top: 40px !important;
+
+  transition: transform 0.3s ease;
+
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.ac.is-active .ac-trigger::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.ac-title {
+  display: block;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.ac-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+#ac-0 .ac-panel .ac-text,
+#ac-1 .ac-panel .ac-text,
+#ac-2 .ac-panel .ac-text,
+#ac-3 .ac-panel .ac-text,
+#ac-4 .ac-panel .ac-text {
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  letter-spacing: -0.02em !important;
+  color: rgba(250, 250, 250, 0.6) !important;
+  padding: 16px 0 0 0 !important;
+}
+#ac-5 .ac-panel .ac-text {
+  font-family: 'Inter Tight', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  letter-spacing: -0.02em !important;
+  color: rgba(250, 250, 250, 0.6) !important;
+  padding: 16px 0 16px 0 !important;
+}
+.ac-title:nth-child(1) {
+  max-width: 265px;
+}
+.ac-title:nth-child(2) {
+  max-width: 230px;
+}
+.ac-title:nth-child(3) {
+  max-width: 241px;
+}
+.ac-title:nth-child(4) {
+  max-width: 208px;
+}
+.ac-title:nth-child(5) {
+  max-width: 208px;
+}
+.ac-title:nth-child(6) {
+  max-width: 289px;
+}
+
+@media (min-width: 768px) {
+  .ac-title:nth-child(1),
+  .ac-title:nth-child(2),
+  .ac-title:nth-child(3),
+  .ac-title:nth-child(4),
+  .ac-title:nth-child(5),
+  .ac-title:nth-child(6) {
+    max-width: 656px;
+  }
+  .ac-text {
+    max-width: 656px;
+  }
+  .break {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+
+    align-items: start;
+  }
+  .ac {
+    min-height: 111px;
+  }
+
+  .faq-grid .ac {
+    border: none !important;
+    padding: 20px 32px 20px 16px !important;
+
+    padding: 20px 32px 20px 16px !important;
+    border-right: 1px solid rgba(250, 250, 250, 0.2) !important;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+
+  .faq-grid .ac:nth-child(2) {
+    border-right: none !important;
+  }
+  .faq-grid .ac:nth-child(4) {
+    border-right: none !important;
+  }
+  .faq-grid .ac:nth-child(6) {
+    border-right: none !important;
+  }
+  .ac-item-6 .ac-trigger {
+    padding: 0 0 0 0 !important;
+  }
+
+  .faq-grid .ac:nth-child(-n + 2) {
+    border-top: 1px solid rgba(250, 250, 250, 0.2) !important;
+  }
+}
