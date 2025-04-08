@@ -1,8 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-new Accordion('.accordion-container', {
-  duration: 400,
+new Accordion('.faq-section .accordion-container', {
+  duration: 100,
   showMultiple: true,
   onOpen: function (currentElement) {
     const icon = currentElement.querySelector('.faq-icon');
