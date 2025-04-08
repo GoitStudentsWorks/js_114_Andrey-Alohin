@@ -291,7 +291,7 @@
   background-color: transparent;
 }
 
-.swiper-slide.swiper-slide-active {
+.swiper-slide.swiper-item.swiper-slide-active {
   background-color: #ed3b44;
 }
 
