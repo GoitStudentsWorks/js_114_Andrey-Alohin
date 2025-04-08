@@ -3,10 +3,9 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-
   color: #fafafa;
   background-color: #1c1d20;
-
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
