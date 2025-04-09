@@ -18,7 +18,6 @@ const aboutSwiper = new Swiper('#swiper-about', {
   loop: true,
   initialSlide: 0,
   spaceBetween: 0,
-  allowSlidePrev: false,
 
   keyboard: {
     enabled: true,
