@@ -60,12 +60,8 @@
     flex-direction: column;
     margin: 0 auto;
     position: relative;
+    gap: 8px;
   }
-}
-.header-nav-overlay {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 .header-menu-title {
   height: 39px;
@@ -83,6 +79,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    gap: 5px;
     transition: 150ms ease-in-out;
     transition-property: opacity, visibility;
   }
@@ -96,8 +93,10 @@
   transition-property: opacity;
 }
 
-.header-nav-menu-item {
+.header-nav-menu-item,
+.header-nav-menu-item > a {
   height: 19px;
+  display: block;
 }
 
 .header-order {
