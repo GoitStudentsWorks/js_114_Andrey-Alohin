@@ -9,7 +9,9 @@ import { Navigation, Keyboard } from 'swiper/modules';
 const aboutBtnRefs = document.querySelector('#about-btn-js');
 const aboutRefs = document.querySelector('#swiper-about');
 
-const aboutAccordion = new Accordion('.accordion-container');
+const aboutAccordion = new Accordion('#accordion-about', {
+  showMultiple: true,
+});
 aboutAccordion.open(0);
 
 const aboutSwiper = new Swiper('#swiper-about', {
@@ -18,7 +20,6 @@ const aboutSwiper = new Swiper('#swiper-about', {
   loop: true,
   initialSlide: 0,
   spaceBetween: 0,
-  allowSlidePrev: false,
 
   keyboard: {
     enabled: true,

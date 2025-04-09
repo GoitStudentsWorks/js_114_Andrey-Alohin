@@ -34,8 +34,10 @@
 
 .header-logo-jefferson {
   /* Стилі для призвища jefferson логотипа*/
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
 
 .header-nav {
@@ -65,8 +67,14 @@
 }
 .header-menu-title {
   height: 39px;
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 3px;
+  transition: color 300ms ease-in-out;
+}
+.header-menu-title:hover,
+.header-menu-title:focus {
+  color: #ed3b44;
 }
 .header-nav-menu-list {
   display: none;
@@ -97,8 +105,16 @@
 .header-nav-menu-item > a {
   height: 19px;
   display: block;
+  transition: color 300ms ease-in-out, text-decoration 300ms ease-in-out;
 }
 
+.header-nav-menu-item > a:focus,
+.header-nav-menu-item > a:hover {
+  color: #ed3b44;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
 .header-order {
   display: none;
 }

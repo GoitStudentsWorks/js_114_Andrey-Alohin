@@ -2,18 +2,23 @@
   <div class="container">
     <div class="img-t">
       <div class="title-img">
-        <img class="img-footer" src="./public/project image.png" />
+        <img
+          class="img-footer"
+          alt="my photo"
+          src="./public/project image.png"
+        />
         <h2 class="title-footer">LET’S <span class="highlight">WORK</span></h2>
       </div>
       <h2 class="together">TOGETHER</h2>
     </div>
-    <form class="div-button-form">
+    <form class="div-button-form" id="order">
       <div class="div-input">
         <!-- there some updates for full div-form -->
         <input
           id="emailInput"
           class="footer-input"
           type="email"
+          autocomplete="off"
           placeholder="clients@gmail.com"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           required
@@ -22,6 +27,7 @@
       </div>
       <input
         type="text"
+        autocomplete="off"
         id="textInput"
         class="footer-comment"
         placeholder="comments"
@@ -32,16 +38,12 @@
 
     <ul class="contact-menu">
       <li class="list-item">
-        <button class="tel-button">
-          <a class="mail" href="mailto:lloydjefferson@gmail.com"
-            >lloydjefferson@gmail.com</a
-          >
-        </button>
+        <a class="tel-button mail" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
       </li>
       <li class="list-item">
-        <button class="tel-button">
-          <a class="tel" href="tel:+380111111111">+380 11 111 11 11</a>
-        </button>
+        <a class="tel-button tel" href="tel:+380111111111">+380 11 111 11 11</a>
       </li>
     </ul>
 

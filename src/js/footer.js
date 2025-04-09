@@ -29,7 +29,7 @@ let formSubmittedSuccessfully = false;
 // validation
 emailInput.addEventListener('input', () => {
   const email = emailInput.value;
-  const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const valid = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email);
 
   emailMessage.classList.remove('success', 'error');
 
@@ -51,7 +51,7 @@ sendBtn.addEventListener('click', async e => {
 
   const email = emailInput.value.trim();
   const comment = commentInput.value.trim();
-  const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const valid = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email);
 
   if (!email || !valid) {
     alert('Please enter a valid email.');
@@ -90,17 +90,29 @@ sendBtn.addEventListener('click', async e => {
     modalText.textContent = 'Please check your data and try again.';
   } finally {
     modal.classList.add('is-open');
+    document.body.classList.add('modal-open');
+    modalCloseBtn.addEventListener('click', closeMenuMobile);
+    modal.addEventListener('click', closeBackdrop);
+    document.addEventListener('keydown', escClose);
   }
 });
 
-// closemark
-modalCloseBtn.addEventListener('click', () => {
+function closeBackdrop(e) {
+  if (e.target === modal) {
+    closeMenuMobile();
+  }
+}
+
+function closeMenuMobile() {
   modal.classList.remove('is-open');
-});
+  document.body.classList.remove('modal-open');
+  modalCloseBtn.removeEventListener('click', closeMenuMobile);
+  modal.removeEventListener('click', closeBackdrop);
+  document.removeEventListener('keydown', escClose);
+}
 
-// close with esc
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && modal.classList.contains('is-open')) {
-    modal.classList.remove('is-open');
+function escClose(e) {
+  if (e.key === 'Escape') {
+    closeMenuMobile();
   }
-});
+}

@@ -74,6 +74,8 @@
   color: #fafafa;
   font-family: 'Inter Tight', sans-serif;
   padding: 0 78px 0 0;
+  text-transform: none;
+  height: auto;
 }
 
 .faq-icon {
@@ -122,6 +124,6 @@
   }
 }
 
-.faq-icon.rotated {
+.ac.faq-item.is-active .faq-icon {
   transform: rotate(180deg);
 }
