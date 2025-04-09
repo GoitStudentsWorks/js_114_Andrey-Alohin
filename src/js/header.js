@@ -2,7 +2,6 @@ import iziToast from 'izitoast';
 
 const burgerEl = document.querySelector('.header-burger');
 const burgerLinkEl = document.querySelectorAll('.header-dropdown-item a');
-const orderLink = document.querySelector('.header-order-burger a');
 const dropdownEl = document.querySelector('.header-dropdown-wrapper');
 const closeMenuBtnEl = document.querySelector('.header-close-btn');
 const menuBtnEl = document.querySelector('.header-menu-title');
@@ -20,9 +19,7 @@ function showMenuMobile() {
     burgerEl.removeEventListener('click', showMenuMobile); // Видаляємо слухач з бургеру, щоб уникнути повторних кліків
     burgerLinkEl.forEach(link => {
       link.addEventListener('click', linkListenerBurger);
-    });
-    orderLink.addEventListener('click', linkListenerBurger);
-    // Додаємо слухачів на посилання пунктів дроп меню
+    }); // Додаємо слухачів на посилання пунктів дроп меню
     document.body.classList.add('modal-open'); // Додаємо клас, щоб не було скрола
   } catch (error) {
     console.log(error);
@@ -57,8 +54,7 @@ function linkListenerBurger() {
     closeMenuBtnFun();
     burgerLinkEl.forEach(link => {
       link.removeEventListener('click', linkListenerBurger);
-    });
-    orderLink.removeEventListener('click', linkListenerBurger); // Видаляємо слухачів з посиланнь пунктів дроп меню
+    }); // Видаляємо слухачів з посиланнь пунктів дроп меню
   } catch (error) {
     console.log(error);
     console.log(error.message);
