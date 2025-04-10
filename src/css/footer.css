@@ -1,8 +1,8 @@
-.footer {
-  background-image: url(/public/backraund1.jpg);
+.footer > .container {
+  background-image: url(/img/footer_bg_mob.png);
   background-position: right;
   background-repeat: no-repeat;
-  padding: 32px 0px;
+  padding: 32px 16px;
 }
 .title-img {
   display: flex;
@@ -212,9 +212,9 @@
 }
 /* TABLET */
 @media (min-width: 768px) {
-  .footer {
-    background-image: url(/img/elements-tablet.jpg);
-    padding: 80px 0 169px;
+  .footer > .container {
+    background-image: url(/img/footer_bg_tab.png);
+    padding: 80px 32px 169px;
   }
   .img-footer {
     width: 70px;
@@ -288,18 +288,16 @@
 
 /* DESKTOP */
 @media (min-width: 1440px) {
-  .footer {
-    background-image: url(/img/elements-desktop.jpg);
-    background-size: 400px;
-  }
   .footer > .container {
-    padding: 0 192px;
+    padding: 80px 196px 169px;
+    background-image: url(/img/footer_bg_desk.png);
+    background-size: 400px;
   }
   .footer-input,
   .footer-comment {
     width: 390px;
   }
-  .footer-input {
+  .div-input {
     margin-right: 32px;
   }
   .div-button-form {
