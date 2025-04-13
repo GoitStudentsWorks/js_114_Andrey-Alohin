@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_114_Andrey-Alohin/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/js_114_Andrey-Alohin/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_114_Andrey-Alohin/assets/vendor-795ZWqCz.js">
+    <link rel="stylesheet" crossorigin href="/js_114_Andrey-Alohin/assets/vendor-CyFlzuZ4.css">
+    <link rel="stylesheet" crossorigin href="/js_114_Andrey-Alohin/assets/index-Cz0bhcS2.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <a class="header-link" href="./index.html">
+      <img
+        class="header-logo-bc"
+        src="data:image/webp;base64,UklGRjIEAABXRUJQVlA4ICYEAABwEwCdASpQAFAAPpFAm0olo6Ihp7VbWLASCWMAzeHRibbcC8usoKdwcCcszhBpaJoPkJ+tvYF6XPour1F+NPRbzC4f1/qttyHsYk3oXy3SRyjwKSDcnfB5G32Rbo+y1SPVp2oz7NJOU/zfjaFHGEPB9fjYI92k6t1x3Dw9l0CAph7uLs5a6KCDuG1Wco5xrQhseHk7av9dEeq9nyKyly4qgRr3YAD+/uw1GoS8m/WRvQbETIalctYIr0AM8CRN8/wB747aqfcJfVaGSD2pkWF4hvKJJd6sas0q4TDsJSrBNv2xhyZ/Zv4W1jbMuWP/+k3LwGuPI42DqhvPuI+Q4+7hIVxN+y5eBxzV+9eL0FpJjxbT74QF2o3fmZLMvpE3AQqEg+IoRsPBO0yE8ojK/YG5NCXpV7KiEd/Fb6+3WAstVtfa8Tk9o8eJTxjjyIl2CtmzWaFFRccRs7+oo9tmp04Yz9ogIe5iSuejHjE1tW7D8dflJp/qu8QmvLn2JaR10xB+bNdtrqTZ6q6im05pzdts8XvXrPze68+aRvCG0SrN9cfQkFB/ZRKsf1zFLbTCqqE9Oe6Zm+mMmf/xDnetz70+D21qFbeZlIuHpNGIDm22djCUVO3orUmJIfomZD/IOo+lFo+BNU3NygqR07c+Mm04yXUz1it9IP8CLQwTl99zGgKHYpXawXENpfTWHlGDFg2LfQZOqFMDayEc3LguzNFsGUJAU4HPgxYVRnvs4M702SGmf0juOeXv7NiAzeOWTUKZBr4U3lPjSElL6iMsXTeGHwPX21eMkG81XfHLtTkLhLOfQBVpzN/B1tjqJssQGR9/Edq3j3Af5W/mLTGV/pcQz/OtF4609ylNQxlC90mE7Bj0ONRVbfr5RjgD645WGNjAtx8YKNTjoXjg6ExI3Mf9/3U0oC7HESRf3j/CZx/rD0NMyC7aHZcvP3O38yiWVtasEGkdEIowqqAdv/pzXBMqTTUkhAq3KAQR/cHLjZAzHx8zynG7h9R0Lbru3BfubBK/+blNETJLRzFajJumwdSyHY8PPvbuJhFu7oH9qgvxtwG+W1CkGSVwO79FGAOaksJrH193TqDBYoINjU9o8PWQDNFOsOLlD+yvf5CewYfboDob5Nfsiw7IBmO9NvAoMBdG+kztXm9GkFJv67O67LiTIbz/pR8XTsXZiW0D9TNtrJfMWTNYMhlQOdgTx3lD1s3jF/+T9dW1v5X/Vc3WpvqP3efifYQNXU87f6Tvsx5O5ubrtNiDh+Qo9DXZyNJGjoRLVyHYuGfh4stpgWxLcdCMitAC309qUG4JdIIb5iOMMAEMiG4NHUoi/DFvqA8CWOL4t5VDLOCKTBfa9s+pLjOy0PI6VGG6rnKTcAPQcOrfPS/A033JqejCx/7ZPSi9/xkOeK/wAAA="
+        srcset="data:image/webp;base64,UklGRjIEAABXRUJQVlA4ICYEAABwEwCdASpQAFAAPpFAm0olo6Ihp7VbWLASCWMAzeHRibbcC8usoKdwcCcszhBpaJoPkJ+tvYF6XPour1F+NPRbzC4f1/qttyHsYk3oXy3SRyjwKSDcnfB5G32Rbo+y1SPVp2oz7NJOU/zfjaFHGEPB9fjYI92k6t1x3Dw9l0CAph7uLs5a6KCDuG1Wco5xrQhseHk7av9dEeq9nyKyly4qgRr3YAD+/uw1GoS8m/WRvQbETIalctYIr0AM8CRN8/wB747aqfcJfVaGSD2pkWF4hvKJJd6sas0q4TDsJSrBNv2xhyZ/Zv4W1jbMuWP/+k3LwGuPI42DqhvPuI+Q4+7hIVxN+y5eBxzV+9eL0FpJjxbT74QF2o3fmZLMvpE3AQqEg+IoRsPBO0yE8ojK/YG5NCXpV7KiEd/Fb6+3WAstVtfa8Tk9o8eJTxjjyIl2CtmzWaFFRccRs7+oo9tmp04Yz9ogIe5iSuejHjE1tW7D8dflJp/qu8QmvLn2JaR10xB+bNdtrqTZ6q6im05pzdts8XvXrPze68+aRvCG0SrN9cfQkFB/ZRKsf1zFLbTCqqE9Oe6Zm+mMmf/xDnetz70+D21qFbeZlIuHpNGIDm22djCUVO3orUmJIfomZD/IOo+lFo+BNU3NygqR07c+Mm04yXUz1it9IP8CLQwTl99zGgKHYpXawXENpfTWHlGDFg2LfQZOqFMDayEc3LguzNFsGUJAU4HPgxYVRnvs4M702SGmf0juOeXv7NiAzeOWTUKZBr4U3lPjSElL6iMsXTeGHwPX21eMkG81XfHLtTkLhLOfQBVpzN/B1tjqJssQGR9/Edq3j3Af5W/mLTGV/pcQz/OtF4609ylNQxlC90mE7Bj0ONRVbfr5RjgD645WGNjAtx8YKNTjoXjg6ExI3Mf9/3U0oC7HESRf3j/CZx/rD0NMyC7aHZcvP3O38yiWVtasEGkdEIowqqAdv/pzXBMqTTUkhAq3KAQR/cHLjZAzHx8zynG7h9R0Lbru3BfubBK/+blNETJLRzFajJumwdSyHY8PPvbuJhFu7oH9qgvxtwG+W1CkGSVwO79FGAOaksJrH193TqDBYoINjU9o8PWQDNFOsOLlD+yvf5CewYfboDob5Nfsiw7IBmO9NvAoMBdG+kztXm9GkFJv67O67LiTIbz/pR8XTsXZiW0D9TNtrJfMWTNYMhlQOdgTx3lD1s3jF/+T9dW1v5X/Vc3WpvqP3efifYQNXU87f6Tvsx5O5ubrtNiDh+Qo9DXZyNJGjoRLVyHYuGfh4stpgWxLcdCMitAC309qUG4JdIIb5iOMMAEMiG4NHUoi/DFvqA8CWOL4t5VDLOCKTBfa9s+pLjOy0PI6VGG6rnKTcAPQcOrfPS/A033JqejCx/7ZPSi9/xkOeK/wAAA= 1x, data:image/webp;base64,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 2x"
+        alt="logo"
+      />
+      <p class="header-logo-jefferson">jefferson*</p>
+    </a>
+    <div class="header-nav">
+      <div class="header-nav-menu">
+        <button class="button-header header-menu-title" type="button">
+          Menu
+        </button>
+        <nav>
+          <ul class="header-nav-menu-list">
+            <li class="header-nav-menu-item"><a href="#about">About me</a></li>
+            <li class="header-nav-menu-item">
+              <a href="#benefits">Benefits</a>
+            </li>
+            <li class="header-nav-menu-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="header-nav-menu-item"><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-order">
+        <a href="#order">Order the project</a>
+      </div>
+      <button aria-label="Open menu button" class="button-header header-burger">
+        <svg class="header-burg-icon">
+          <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#menu_icon"></use>
+        </svg>
+      </button>
+      <div class="header-dropdown-wrapper">
+        <div class="container menu-container">
+          <button
+            aria-label="Close menu button"
+            class="button-header header-close-btn"
+            type="button"
+          >
+            <svg class="header-close-icon">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#close_icon"></use>
+            </svg>
+          </button>
+          <ul class="header-dropdown">
+            <li class="header-dropdown-item"><a href="#about">About me</a></li>
+            <li class="header-dropdown-item">
+              <a href="#benefits">Benefits</a>
+            </li>
+            <li class="header-dropdown-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="header-dropdown-item"><a href="#faq">FAQ</a></li>
+          </ul>
+          <div class="header-order-burger">
+            <a href="#order">Order the project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero-section">
+  <div class="container">
+    <h1 class="hero-title">
+      <span class="hero-title-hello">HELLO.</span> I’M FULLSTACK DEVELOPER LLOYD
+      JEFFERSON.
+    </h1>
+    <ul class="hero-list">
+      <li class="hero-link">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >IG</a
+        >
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >FB</a
+        >
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          >YT</a
+        >
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://github.com/Andrey-Alohin/elevate_together"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GH</a
+        >
+      </li>
+      <li class="hero-link email-link">
+        <a
+          href="mailto:lloydjefferson@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="about" id="about">
+  <div class="container">
+    <h2 class="visually-hidden" style="display: none">About me</h2>
+
+    <!-- #region Part one -->
+    <div class="part-one">
+      <div class="first-card">
+        <h3 class="text-about-me">
+          I work with people all over the world to create impressive and
+          <span class="red-text">functional</span>
+          <span class="grey-text">websites</span> that reflect each client's
+          unique personality.
+        </h3>
+      </div>
+      <div class="second-card">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/js_114_Andrey-Alohin/assets/about_desk-DBWz1cmC.webp 1x, /js_114_Andrey-Alohin/assets/about_desk@2x-DomgE29G.webp 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/js_114_Andrey-Alohin/assets/about_tab-Co_HFuuB.webp 1x, /js_114_Andrey-Alohin/assets/about_tab@2x-DaZYT5k_.webp 2x"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="/js_114_Andrey-Alohin/assets/about_mob-CTpTyovH.webp 1x, /js_114_Andrey-Alohin/assets/about_mob@2x-Dy68SSxC.webp 2x"
+          />
+          <img
+            class="about-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/about_mob-CTpTyovH.webp"
+            alt="My photo"
+            width="680"
+            height="700"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- #endregion Part one -->
+
+    <!-- #region Part two -->
+    <ul class="accordion-container" id="accordion-about">
+      <li class="ac about-me">
+        <h3 class="ac-header title-about">
+          <button type="button" class="ac-trigger">
+            about-me
+            <svg class="icon-accordion" width="18" height="18">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="ac-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac about-me">
+        <h3 class="ac-header title-about">
+          <button type="button" class="ac-trigger">
+            role
+            <svg class="icon-accordion" width="18" height="18">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">Frontend development</p>
+          <p class="ac-text">HeadlessCMS,Wordpress</p>
+          <p class="ac-text">Blender(enjoy)</p>
+        </div>
+      </li>
+      <li class="ac about-me">
+        <h3 class="ac-header title-about">
+          <button type="button" class="ac-trigger">
+            education
+            <svg class="icon-accordion" width="18" height="18">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT
+            School,&nbsp;New&nbsp;York
+          </p>
+          <p class="ac-text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p class="ac-text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- #endregion Part two -->
+
+    <!-- #region Part three -->
+    <div class="container-swiper">
+      <div id="swiper-about" class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide swiper-item">HTML/CSS</li>
+          <li class="swiper-slide swiper-item">JavaScript</li>
+          <li class="swiper-slide swiper-item">React</li>
+          <li class="swiper-slide swiper-item">Node.js</li>
+          <li class="swiper-slide swiper-item">React Native</li>
+          <li class="swiper-slide swiper-item">Soft skills</li>
+          <li class="swiper-slide swiper-item">Hard skills</li>
+          <li class="swiper-slide swiper-item">Git/GitHub</li>
+        </ul>
+      </div>
+
+      <button
+        aria-label="Skills next button"
+        type="button"
+        class="swiper-btn"
+        id="about-btn-js"
+      >
+        <svg class="icon-next" width="28" height="28">
+          <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- #endregion Part three -->
+  </div>
+</section>
+
+      <section class="benefits" id="benefits">
+  <div class="container benefits-wrapper">
+    <h2 class="benefits-header">BENEFITS OF WORKING WITH ME</h2>
+
+    <div class="contant">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#user_icon"></use>
+          </svg>
+          <div class="benefits-item-text">
+            <h3 class="benefits-subtitle">Expertise</h3>
+            <p class="benefits-paragraph">As a highly experienced developer, I have deep knowledge of programming and website development.</p>
+          </div>
+        </li>
+        <li class="benefits-item">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#message_chat_icon"></use>
+          </svg>
+          <div class="benefits-item-text">
+            <h3 class="benefits-subtitle">Communication</h3>
+            <p class="benefits-paragraph">Understanding your needs and wants is my priority and I am always open to discussions and corrections.</p>
+          </div>
+        </li>
+        <li class="benefits-item">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#brush_icon"></use>
+          </svg>
+          <div class="benefits-item-text">
+            <h3 class="benefits-subtitle">Art</h3>
+            <p class="benefits-paragraph">Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.</p>
+          </div>
+        </li>
+        <li class="benefits-item">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#hourglass_icon"></use>
+          </svg>
+          <div class="benefits-item-text">
+            <h3 class="benefits-subtitle">Urgent execution</h3>
+            <p class="benefits-paragraph">I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.</p>
+          </div>
+        </li>
+      </ul>
+      <a href="#footer" class="benefits-order-button">Order the project</a>
+    </div>
+  </div>
+</section>
+
+      <section class="projects-section" id="projects">
+  <div class="container">
+    <h2 class="projects-subtitle">projects</h2>
+    <div class="swiper" id="project-swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="project-box-flex">
+            <div class="project-box-content">
+              <ul class="projects-list">
+                <li class="projects-item">#react</li>
+                <li class="projects-item">#js</li>
+                <li class="projects-item">#node js</li>
+                <li class="projects-item">#git</li>
+              </ul>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <a
+                href="https://github.com/Andrey-Alohin/elevate_together#"
+                class="projects-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="projects-box-img">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_1_tab_desk@1x-CDS4LjOb.webp 1x, /js_114_Andrey-Alohin/assets/project_1_tab_desk@2x-CjW8H8On.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_1_mob@1x-CobBzSrR.webp 1x, /js_114_Andrey-Alohin/assets/project_1_mob@2x-BTwE4DPK.webp 2x"
+                />
+                <img
+                  class="projects-image"
+                  loading="lazy"
+                  src="/js_114_Andrey-Alohin/assets/project_1_tab_desk@1x-CDS4LjOb.webp"
+                  alt="project image read journey"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="project-box-flex">
+            <div class="project-box-content">
+              <ul class="projects-list">
+                <li class="projects-item">#react</li>
+                <li class="projects-item">#js</li>
+                <li class="projects-item">#node js</li>
+                <li class="projects-item">#git</li>
+              </ul>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <a
+                href="https://github.com/Andrey-Alohin/elevate_together#"
+                class="projects-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="projects-box-img">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_2_tab_desk@1x-w0oEZeUJ.webp 1x, /js_114_Andrey-Alohin/assets/project_2_tab_desk@2x-Dbw_Z8NC.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_2_mob@1x-Eq7pWRh-.webp 1x, /js_114_Andrey-Alohin/assets/project_2_mob@2x-CAOG7gMJ.webp 2x"
+                />
+                <img
+                  class="projects-image"
+                  loading="lazy"
+                  src="/js_114_Andrey-Alohin/assets/project_2_tab_desk@1x-w0oEZeUJ.webp"
+                  alt="project image petlove"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="project-box-flex">
+            <div class="project-box-content">
+              <ul class="projects-list">
+                <li class="projects-item">#react</li>
+                <li class="projects-item">#js</li>
+                <li class="projects-item">#node js</li>
+                <li class="projects-item">#git</li>
+              </ul>
+              <p class="projects-text">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+              <a
+                href="https://github.com/Andrey-Alohin/elevate_together#"
+                class="projects-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="projects-box-img">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_3_tab_desk@1x-7uiVGmL5.webp 1x, /js_114_Andrey-Alohin/assets/project_3_tab_desk@2x-JPzUvRto.webp 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/js_114_Andrey-Alohin/assets/project_3_mob@1x-CmyzgJjC.webp 1x, /js_114_Andrey-Alohin/assets/project_3_mob@2x-cswjXASk.webp 2x"
+                />
+                <img
+                  class="projects-image"
+                  loading="lazy"
+                  src="/js_114_Andrey-Alohin/assets/project_3_tab_desk@1x-7uiVGmL5.webp"
+                  alt="project image VocabBuilder"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="projects-btn-box">
+    <button
+      aria-label="Prev project button"
+      class="projects-arow-btn"
+      id="btn-prev"
+    >
+      <svg class="arrow-icon" width="24" height="24">
+        <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_left"></use>
+      </svg>
+    </button>
+    <button
+      aria-label="Next project button"
+      class="projects-arow-btn"
+      id="btn-next"
+    >
+      <svg class="arrow-icon" width="24" height="24">
+        <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_right"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="faq-subtitle">faq</h2>
+    <ul class="accordion-container faq-list grid-list-faq">
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn">
+            What programming languages are most often used in your project?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item third">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn">
+            What are the deadlines for the&nbsp;project?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item fifth">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn">
+            What payment methods do you accept?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item second">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn">
+            How can I contact you?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item fourth">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn">
+            Do you provide advice or&nbsp;support?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item sixth">
+        <h3 class="ac-header faq-title">
+          <button class="ac-trigger faq-btn faq-btn-text">
+            What does the process of developing a software product look like
+            from idea to implementation?
+            <svg class="faq-icon" width="20" height="20">
+              <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="covers">
+  <div class="container-covers">
+    <h2 class="visually-hidden">Covers</h2>
+    <div class="covers-display">
+      <ul class="covers-list">
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp"
+            alt="Project screen 1"
+            srcset="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp 1x, /js_114_Andrey-Alohin/assets/first_slide@2x-CclqSzum.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp"
+            alt="Project screen 2"
+            srcset="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp 1x, /js_114_Andrey-Alohin/assets/second_slide@2x-C8MwWxsb.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/third_slide-CSLX95ab.webp"
+            alt="Project screen 3"
+            srcset="/js_114_Andrey-Alohin/assets/third_slide-CSLX95ab.webp 1x, /js_114_Andrey-Alohin/assets/third_slide@2x-CTrn9KhB.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/four_slide-CKgQZBFd.webp"
+            alt="Project screen 4"
+            srcset="/js_114_Andrey-Alohin/assets/four_slide-CKgQZBFd.webp 1x, /js_114_Andrey-Alohin/assets/five_slide@2x-fE_NwL2J.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/five_slide-DZRY5JcE.webp"
+            alt="Project screen 5"
+            srcset="/js_114_Andrey-Alohin/assets/five_slide-DZRY5JcE.webp 1x, /js_114_Andrey-Alohin/assets/five_slide@2x-fE_NwL2J.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/six_slide-CAEfiZh1.webp"
+            alt="Project screen 6"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/six_slide-CAEfiZh1.webp 1x, /js_114_Andrey-Alohin/assets/six_slide@2x-PaXsbwAK.webp 2x"
+          />
+        </li>
+      </ul>
+      <ul class="covers-list">
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/four_slide-CKgQZBFd.webp"
+            alt="Project screen 4"
+            srcset="/js_114_Andrey-Alohin/assets/four_slide-CKgQZBFd.webp 1x, /js_114_Andrey-Alohin/assets/four_slide@2x-CZWGyBFp.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/five_slide-DZRY5JcE.webp"
+            alt="Project screen 5"
+            srcset="/js_114_Andrey-Alohin/assets/five_slide-DZRY5JcE.webp 1x, /js_114_Andrey-Alohin/assets/five_slide@2x-fE_NwL2J.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/six_slide-CAEfiZh1.webp"
+            alt="Project screen 6"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/six_slide-CAEfiZh1.webp 1x, /js_114_Andrey-Alohin/assets/six_slide@2x-PaXsbwAK.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/seven_slide-Da4AAOc0.webp"
+            alt="Project screen 7"
+            srcset="/js_114_Andrey-Alohin/assets/seven_slide-Da4AAOc0.webp 1x, /js_114_Andrey-Alohin/assets/seven_slide@2x-Di0UWkkb.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/eight_slide-DSaG5bg0.webp"
+            alt="Project screen 8"
+            srcset="/js_114_Andrey-Alohin/assets/eight_slide-DSaG5bg0.webp 1x, /js_114_Andrey-Alohin/assets/eight_slide@2x-CJbnBPLD.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/nine_slide-D2bIaA0S.webp"
+            alt="Project screen 9"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/nine_slide-D2bIaA0S.webp 1x, /js_114_Andrey-Alohin/assets/nine_slide@2x-BtQeeZaG.webp 2x"
+          />
+        </li>
+      </ul>
+      <ul class="covers-list">
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/seven_slide-Da4AAOc0.webp"
+            alt="Project screen 7"
+            srcset="/js_114_Andrey-Alohin/assets/seven_slide-Da4AAOc0.webp 1x, /js_114_Andrey-Alohin/assets/seven_slide@2x-Di0UWkkb.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/eight_slide-DSaG5bg0.webp"
+            alt="Project screen 8"
+            srcset="/js_114_Andrey-Alohin/assets/eight_slide-DSaG5bg0.webp 1x, /js_114_Andrey-Alohin/assets/eight_slide@2x-CJbnBPLD.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/nine_slide-D2bIaA0S.webp"
+            alt="Project screen 9"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/nine_slide-D2bIaA0S.webp 1x, /js_114_Andrey-Alohin/assets/nine_slide@2x-BtQeeZaG.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/ten_slide-DLPdof_3.webp"
+            alt="Project screen 10"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/ten_slide-DLPdof_3.webp 1x, /js_114_Andrey-Alohin/assets/ten_slide@2x-DHjxnJEG.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp"
+            alt="Project screen 1"
+            srcset="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp 1x, /js_114_Andrey-Alohin/assets/first_slide@2x-CclqSzum.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp"
+            alt="Project screen 2"
+            srcset="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp 1x, /js_114_Andrey-Alohin/assets/second_slide@2x-C8MwWxsb.webp 2x"
+          />
+        </li>
+      </ul>
+
+      <ul class="covers-list">
+        <li class="covers-item">
+          <img
+            src="/js_114_Andrey-Alohin/assets/ten_slide-DLPdof_3.webp"
+            alt="Project screen 10"
+            class="covers-img"
+            loading="lazy"
+            srcset="/js_114_Andrey-Alohin/assets/ten_slide-DLPdof_3.webp 1x, /js_114_Andrey-Alohin/assets/ten_slide@2x-DHjxnJEG.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp"
+            alt="Project screen 1"
+            srcset="/js_114_Andrey-Alohin/assets/first_slide-CX2wMAER.webp 1x, /js_114_Andrey-Alohin/assets/first_slide@2x-CclqSzum.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp"
+            alt="Project screen 2"
+            srcset="/js_114_Andrey-Alohin/assets/second_slide-CNsVmeWp.webp 1x, /js_114_Andrey-Alohin/assets/second_slide@2x-C8MwWxsb.webp 2x"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            class="covers-img"
+            loading="lazy"
+            src="/js_114_Andrey-Alohin/assets/third_slide-CSLX95ab.webp"
+            alt="Project screen 3"
+            srcset="/js_114_Andrey-Alohin/assets/third_slide-CSLX95ab.webp 1x, /js_114_Andrey-Alohin/assets/third_slide@2x-CTrn9KhB.webp 2x"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews-section" id="reviews">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="reviews-placeholder hidden">Not Found</div>
+    <div class="swiper reviews-swiper reviews-gallery">
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <div class="reviews-btn-box hidden">
+        <button aria-label="Prev review button" class="reviews-arow-btn prev">
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_left"></use>
+          </svg>
+        </button>
+        <button aria-label="Next review button" class="reviews-arow-btn next">
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#arrow_right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="img-t">
+      <div class="title-img">
+        <img
+          class="img-footer"
+          alt="my photo"
+          src="data:image/webp;base64,UklGRjIEAABXRUJQVlA4ICYEAABwEwCdASpQAFAAPpFAm0olo6Ihp7VbWLASCWMAzeHRibbcC8usoKdwcCcszhBpaJoPkJ+tvYF6XPour1F+NPRbzC4f1/qttyHsYk3oXy3SRyjwKSDcnfB5G32Rbo+y1SPVp2oz7NJOU/zfjaFHGEPB9fjYI92k6t1x3Dw9l0CAph7uLs5a6KCDuG1Wco5xrQhseHk7av9dEeq9nyKyly4qgRr3YAD+/uw1GoS8m/WRvQbETIalctYIr0AM8CRN8/wB747aqfcJfVaGSD2pkWF4hvKJJd6sas0q4TDsJSrBNv2xhyZ/Zv4W1jbMuWP/+k3LwGuPI42DqhvPuI+Q4+7hIVxN+y5eBxzV+9eL0FpJjxbT74QF2o3fmZLMvpE3AQqEg+IoRsPBO0yE8ojK/YG5NCXpV7KiEd/Fb6+3WAstVtfa8Tk9o8eJTxjjyIl2CtmzWaFFRccRs7+oo9tmp04Yz9ogIe5iSuejHjE1tW7D8dflJp/qu8QmvLn2JaR10xB+bNdtrqTZ6q6im05pzdts8XvXrPze68+aRvCG0SrN9cfQkFB/ZRKsf1zFLbTCqqE9Oe6Zm+mMmf/xDnetz70+D21qFbeZlIuHpNGIDm22djCUVO3orUmJIfomZD/IOo+lFo+BNU3NygqR07c+Mm04yXUz1it9IP8CLQwTl99zGgKHYpXawXENpfTWHlGDFg2LfQZOqFMDayEc3LguzNFsGUJAU4HPgxYVRnvs4M702SGmf0juOeXv7NiAzeOWTUKZBr4U3lPjSElL6iMsXTeGHwPX21eMkG81XfHLtTkLhLOfQBVpzN/B1tjqJssQGR9/Edq3j3Af5W/mLTGV/pcQz/OtF4609ylNQxlC90mE7Bj0ONRVbfr5RjgD645WGNjAtx8YKNTjoXjg6ExI3Mf9/3U0oC7HESRf3j/CZx/rD0NMyC7aHZcvP3O38yiWVtasEGkdEIowqqAdv/pzXBMqTTUkhAq3KAQR/cHLjZAzHx8zynG7h9R0Lbru3BfubBK/+blNETJLRzFajJumwdSyHY8PPvbuJhFu7oH9qgvxtwG+W1CkGSVwO79FGAOaksJrH193TqDBYoINjU9o8PWQDNFOsOLlD+yvf5CewYfboDob5Nfsiw7IBmO9NvAoMBdG+kztXm9GkFJv67O67LiTIbz/pR8XTsXZiW0D9TNtrJfMWTNYMhlQOdgTx3lD1s3jF/+T9dW1v5X/Vc3WpvqP3efifYQNXU87f6Tvsx5O5ubrtNiDh+Qo9DXZyNJGjoRLVyHYuGfh4stpgWxLcdCMitAC309qUG4JdIIb5iOMMAEMiG4NHUoi/DFvqA8CWOL4t5VDLOCKTBfa9s+pLjOy0PI6VGG6rnKTcAPQcOrfPS/A033JqejCx/7ZPSi9/xkOeK/wAAA="
+          srcset="data:image/webp;base64,UklGRjIEAABXRUJQVlA4ICYEAABwEwCdASpQAFAAPpFAm0olo6Ihp7VbWLASCWMAzeHRibbcC8usoKdwcCcszhBpaJoPkJ+tvYF6XPour1F+NPRbzC4f1/qttyHsYk3oXy3SRyjwKSDcnfB5G32Rbo+y1SPVp2oz7NJOU/zfjaFHGEPB9fjYI92k6t1x3Dw9l0CAph7uLs5a6KCDuG1Wco5xrQhseHk7av9dEeq9nyKyly4qgRr3YAD+/uw1GoS8m/WRvQbETIalctYIr0AM8CRN8/wB747aqfcJfVaGSD2pkWF4hvKJJd6sas0q4TDsJSrBNv2xhyZ/Zv4W1jbMuWP/+k3LwGuPI42DqhvPuI+Q4+7hIVxN+y5eBxzV+9eL0FpJjxbT74QF2o3fmZLMvpE3AQqEg+IoRsPBO0yE8ojK/YG5NCXpV7KiEd/Fb6+3WAstVtfa8Tk9o8eJTxjjyIl2CtmzWaFFRccRs7+oo9tmp04Yz9ogIe5iSuejHjE1tW7D8dflJp/qu8QmvLn2JaR10xB+bNdtrqTZ6q6im05pzdts8XvXrPze68+aRvCG0SrN9cfQkFB/ZRKsf1zFLbTCqqE9Oe6Zm+mMmf/xDnetz70+D21qFbeZlIuHpNGIDm22djCUVO3orUmJIfomZD/IOo+lFo+BNU3NygqR07c+Mm04yXUz1it9IP8CLQwTl99zGgKHYpXawXENpfTWHlGDFg2LfQZOqFMDayEc3LguzNFsGUJAU4HPgxYVRnvs4M702SGmf0juOeXv7NiAzeOWTUKZBr4U3lPjSElL6iMsXTeGHwPX21eMkG81XfHLtTkLhLOfQBVpzN/B1tjqJssQGR9/Edq3j3Af5W/mLTGV/pcQz/OtF4609ylNQxlC90mE7Bj0ONRVbfr5RjgD645WGNjAtx8YKNTjoXjg6ExI3Mf9/3U0oC7HESRf3j/CZx/rD0NMyC7aHZcvP3O38yiWVtasEGkdEIowqqAdv/pzXBMqTTUkhAq3KAQR/cHLjZAzHx8zynG7h9R0Lbru3BfubBK/+blNETJLRzFajJumwdSyHY8PPvbuJhFu7oH9qgvxtwG+W1CkGSVwO79FGAOaksJrH193TqDBYoINjU9o8PWQDNFOsOLlD+yvf5CewYfboDob5Nfsiw7IBmO9NvAoMBdG+kztXm9GkFJv67O67LiTIbz/pR8XTsXZiW0D9TNtrJfMWTNYMhlQOdgTx3lD1s3jF/+T9dW1v5X/Vc3WpvqP3efifYQNXU87f6Tvsx5O5ubrtNiDh+Qo9DXZyNJGjoRLVyHYuGfh4stpgWxLcdCMitAC309qUG4JdIIb5iOMMAEMiG4NHUoi/DFvqA8CWOL4t5VDLOCKTBfa9s+pLjOy0PI6VGG6rnKTcAPQcOrfPS/A033JqejCx/7ZPSi9/xkOeK/wAAA= 1x, data:image/webp;base64,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 2x"
+        />
+        <h2 class="title-footer">LET’S <span class="highlight">WORK</span></h2>
+      </div>
+      <h2 class="together">TOGETHER</h2>
+    </div>
+    <form class="div-button-form" id="order">
+      <div class="div-input">
+        <input
+          id="emailInput"
+          class="footer-input"
+          type="email"
+          autocomplete="off"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <p id="emailMessage" class="input-message"></p>
+      </div>
+      <input
+        type="text"
+        autocomplete="off"
+        id="textInput"
+        class="footer-comment"
+        placeholder="comments"
+        maxlength="100"
+      />
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+
+    <ul class="contact-menu">
+      <li class="list-item">
+        <a class="tel-button mail" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+      <li class="list-item">
+        <a class="tel-button tel" href="tel:+380111111111">+380 11 111 11 11</a>
+      </li>
+    </ul>
+
+    <div class="backdrop">
+      <div class="footer-modal">
+        <button type="button" class="modal-btn">
+          <svg class="footer-close-icon">
+            <use href="/js_114_Andrey-Alohin/assets/sprites-mtQtQJyJ.svg#close_icon"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+        <p class="modal-p">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
